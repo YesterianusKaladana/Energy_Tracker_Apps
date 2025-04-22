@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Location Edit</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script type="module" src="/scripts/LocationEditController.mjs" defer></script>
+    </head>
+    <body>
+        <div class="container">
+
+                <!-- TODO: Nav bar with menu -->
+         <nav>
+            <ul>
+                <li><a href="../views/location_list.html">Locations</a></li>
+                <li><a href="/">Leaderboard</a></li>
+                <li><a href="/">National Stats</a></li>
+         </nav>
+         <h1>Location List</h1>
+
+         <button id="back-button">Back</button>
+
+            <section>
+                <input type="text" id="location-name" placeholder="Location name">
+                <select id="location-state">
+                    <option>States</option>
+                    <option value="Queensland">Queensland</option>
+                    <option value="New South Wales">New South Wales</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Western Australia">Western Australia</option>
+                </select>
+            </section>
+            <section>
+                <select id="appliance-select">
+                    <option>Appliances</option>
+                    <option value="light">light</option>
+                    <option value="fan">fan</option>
+                    <option value="heater">heater</option>
+                    <option value="air conditioner">air conditioner</option>
+                </select>
+                <!-- TODO: Appliance adding interface -->
+            </section>
+            <section>
+                <!-- TODO: Appliance list -->
+            </section>
+
+            <section>
+                <input type="button" value="Cancel" id="Cancel-button">
+                <input type="button" value="Save" id="save-location">
+            </section>
+
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Stats</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../scripts/LocationStatsController.mjs" defer></script>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><a href="../views/location_list.html">Locations</a></li>
+                <li><a href="/">Leaderboard</a></li>
+                <li><a href="../scripts/LocationStatsController.mjs">National Stats</a></li>
+            </ul>
+        </nav>
+
+        <button type="button" id="back-button">Back</button>
+
+        <div class="statistics-container">
+            <h1>Energy Usage</h1>
+            <ul class="statistics-list">
+                
+            </ul>
+        </div>
+    
+        <div class="leaderboard-form">
+            <h2>Post to Leaderboard</h2>
+            <form id="leaderboardForm">
+                <input type="hidden" name="locationName" value="<%= location.name %>">
+                <div class="form-group">
+                    <label for="statisticName">Statistic to Post:</label>
+                    <input type="text" id="statisticName" name="statisticName" required>
+                </div>
+                <div class="form-group">
+                    <label for="statisticValue">Value:</label>
+                    <input type="number" id="statisticValue" name="statisticValue" required>
+                </div>
+                <button type="button" onclick="postToLeaderboard()">Post to Leaderboard</button>
+                <div id="message"></div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
