@@ -76,7 +76,7 @@ export class LocationEditController{
         LocationModel.update(location)
 e
         // Redirect back to location
-        window.location = "/views/location_list.html";
+        window.location = "./views/location_list.html";
 
     }
 
